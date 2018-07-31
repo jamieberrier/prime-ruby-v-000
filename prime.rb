@@ -5,7 +5,6 @@ require 'pry'
 def prime?(n)
   sieve = []
   (2..n).each { |i| sieve[i] = i }
-  (2..Math.sqrt(n)).each do |i|
-  (i*i).step(n, i) { |j| sieve[j] = nil } if sieve[i]
+  
   end
 end
